@@ -21,3 +21,9 @@ While exercise 1.3 was about applying the transformation, with just the option t
 - How to convert poses between coordinate systems
 - How a transformation applied from the left acts compared to one applied from the right
 
+### Robotics Toolbox Example
+
+[./robotics_toolbox_example/](./robotics_toolbox_example/)
+
+This example shows how to load a Franka Emika "Panda" robot into the simulation of the Robotics Toolbox, and to move it by setting a task space goal for its end effector.
+
