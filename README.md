@@ -4,32 +4,40 @@ Here you can find code related to the lecture Robotics I. For installation instr
 
 ## Content
 
-### Exercise Sheet 1
+### Sheet 1
 
 #### Exercise 3 (Visualization of Transformations)
 
-[./exercise_1_3__visualization_of_transformations/](./exercise_1_3__visualization_of_transformations/)
+[./sheet-1-exercise-3__visualization-of-transformations/](./sheet-1-exercise-3__visualization-of-transformations/)
 
 What does applying a homogeneous transformation matrix yield, if it contains both a (non-identity) rotation and translation? And what is the effect of multiplying from the left vs. from the right? Visualize the solution of exercise 3 and play around with the parameters using this simple python script. It is an all-in-one file written to be easily understandable, and just requires a very few common python packages (numpy and matplotlib).
 
-![Robot pose in the x/y-plane](img/exercise_sheet_1__exercise_3__illustration.png)
+![Robot pose in the x/y-plane](img/sheet-1-exercise_3__illustration.png)
 
-### Exercise Sheet 2
+### Sheet 2
 
 #### Exercise 1 (Transformations)
 
-[./exercise_2_1__transformations/](./exercise_2_1__transformations/)
+[./sheet-2-exercise-1__transformations/](./sheet-2-exercise-1__transformations/)
 
 While exercise 1.3 was about applying the transformation, with just the option to try out the effect of performing the calculations differently, this exercise 2.1 is now about systematically investigating
 - How a homogeneous transformation matrix is interpreted
 - How to convert poses between coordinate systems
 - How a transformation applied from the left acts compared to one applied from the right
 
-### Robotics Toolbox Example
+### Addition 1 (Robotics Toolbox)
 
-[./robotics_toolbox_example/](./robotics_toolbox_example/)
+[./sheet-2-addition-1__robotics-toolbox/](./sheet-2-addition-1__robotics-toolbox/)
 
 This example shows how to load a Franka Emika "Panda" robot into the simulation of the Robotics Toolbox, and to move it by setting a task space goal for its end effector.
+
+### Addition 2 (MuJoCo)
+
+[./sheet-2-addition-2__mujoco/](./sheet-2-addition-2__mujoco/)
+
+This notebook, [shared with the lecture on Mechano-Informatics](https://git.h2t.iar.kit.edu/teaching/code/mechano-informatics/-/tree/master/ch1_spatial_transformation), shows how to use the MuJoCo simulation in a jupyter notebook and contains multiple visualizations for spatial transformations.
+
+![MuJoCo simulation with ARMAR-6](img/sheet-2-addition-2__illustration.jpg)
 
 ## Installation
 
