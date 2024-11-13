@@ -1,0 +1,4 @@
+git+https://github.com/wyngjf/robot-utils-pub.git
+git+https://git.h2t.iar.kit.edu/teaching/code-examples/robot-simulation.git
+notebook
+

@@ -2,3 +2,8 @@ numpy
 matplotlib
 notebook
 roboticstoolbox-python[collision]
+
+# For code shared with the mechano-informatics lecture:
+git+https://github.com/wyngjf/robot-utils-pub.git
+git+https://git.h2t.iar.kit.edu/teaching/code-examples/robot-simulation.git
+
