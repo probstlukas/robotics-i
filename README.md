@@ -91,7 +91,7 @@ This notebook, [shared with the lecture on Mechano-Informatics](https://git.h2t.
 
 3. Install dependencies:
    ```shell
-   pip install -r mi_code_requirements_all.txt
+   pip install -r requirements_all.txt
    ```
 
 ### Using the Jupyter Notebooks
