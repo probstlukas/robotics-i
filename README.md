@@ -41,6 +41,9 @@ This notebook, [shared with the lecture on Mechano-Informatics](https://git.h2t.
 
 ## Installation
 
+**Note:** *The code in this repository was mainly tested in Linux (Ubuntu). We also provide instructions for other OS, and it should
+also work on Windows and Mac but the behavior might be slightly different.*
+
 ### Download the Code
 
 1. Make sure you have git installed on your computer. Then, clone the repository:
@@ -49,11 +52,15 @@ This notebook, [shared with the lecture on Mechano-Informatics](https://git.h2t.
    git clone https://git.h2t.iar.kit.edu/teaching/code/robotics-i.git
    cd robotics-i
    ```
+   * If you are not familiar with git, you can also download the code as a zip file from 
+   the [repository's web interface](https://git.h2t.iar.kit.edu/teaching/code/robotics-i) 
+     * Top right of this page "code" button -> "Download source code" -> "zip"
+     * unzip it to the desired location.
 
 ### Setup a Virtual Environment
 
 1. Decide which management tool you want to install for your virtual environments. Depending on your operating system, you can choose between these options:
-   - Windows: use *conda*
+   - Windows: use *conda* (recommended, *virtualenv* also possible)
    - Linux: use either *conda* or *virtualenv*
    - MacOS: use *conda*
 
@@ -107,14 +114,15 @@ This notebook, [shared with the lecture on Mechano-Informatics](https://git.h2t.
          ```shell
          source venv/bin/activate
          ```
-2. Run jupyter-notebook server
+2. In the robotics-i directory, run jupyter-notebook server
    ```shell
    jupyter notebook
    ```
 
-3. View the notebooks. A web-browser will pop up showing the working directory of the robotics-i code repository.
-   If not, then you can copy the link in the shell or terminal and paste it to your web-browser, or press ctrl and click
-   the link.
+3. View the notebooks. A web-browser will pop up showing the current directory (should be the robotics-i folder). 
+   You might be asked how you want to open the file, chose your favorite web-browser.
+   If it doesn't open by itself, you can copy the link in the shell or terminal and paste it to your web-browser, or press ctrl and click
+   the link. Navigate to the folder of the exercise you want to work on and open the notebook file.
    - The notebook files end with a `.ipynb` extension.
    - Open a notebook in the web interface.
    - You can now explore the notebook by running the cells one by one and editing the code to experiment with the example.
@@ -183,3 +191,10 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init zsh
 ```
 
+#### Swift Display Error 
+Under windows a known issue is that the swift display (eg. in sheet2 addition 1, `Robotics_Toolbox_Example.ipynb`, cell 3) 
+can result in an error. If you encounter this issue, you can 
+* Try to restart the notebook's python kernel (toolbar -> arrow icon)
+* Try to run the environment with rtc as communication backend by using 
+  * `env.launch(realtime=True, browser="notebook" if not params.open_simulation_in_new_tab else None, comms='rtc')`
+  * This is already prepared in the code.
