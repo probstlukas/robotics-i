@@ -2,6 +2,7 @@ numpy
 matplotlib
 notebook
 roboticstoolbox-python[collision]
+aiortc
 
 # For code shared with the mechano-informatics lecture:
 git+https://github.com/wyngjf/robot-utils-pub.git
